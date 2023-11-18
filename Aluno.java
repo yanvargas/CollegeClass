@@ -18,10 +18,12 @@ public class Aluno extends Pessoa{
   }
   public void setNotas(Double[] notas) {
 	    this.notas=notas;
+	    notas.addAluno(this);
   }
   
   public void addCurso(Curso curso) {
 	  cursos.add(curso);
+	  curso.addAluno(this);
   }
   
   public void imprimir() {
