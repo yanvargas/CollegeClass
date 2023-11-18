@@ -37,13 +37,16 @@ public class Disciplina {
 
     public void addAluno(Aluno aluno) {
         alunos.add(aluno);
+        aluno.addDisciplina(this);
     }
 
     public void addCurso(Curso curso) {
         cursos.add(curso);
+        curso.addDisciplina(this);
     }
   
     public void addProfessor(Professor professor) {
         this.pessoas=pessoas;
+        professor.addDisciplina(this);
     }
 }
