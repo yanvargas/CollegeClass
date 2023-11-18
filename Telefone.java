@@ -40,6 +40,7 @@ public class Telefone {
   	//add para o associado da class pessoa
 	  public void addPessoa(Pessoa pessoas) {
 		  this.pessoas = pessoas;
+		  pessoas.addTelefone(this);
 	  }
 }
 
