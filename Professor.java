@@ -36,6 +36,7 @@ public class Professor extends Pessoa {
 
     public void addCurso(Curso curso) {
         cursos.add(curso);
+        curso.addProfessor(this);
     }
     
     public void imprimir() {
