@@ -55,6 +55,7 @@ public class Pessoa{
 	  }
 	  public void addEndereco(Endereco endereco) {
 		  this.endereco=endereco;
+		  endereco.addPessoa(this);
 	  }
  
 }
