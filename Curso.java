@@ -30,9 +30,11 @@ public class Curso {
 
     public void addProfessor(Professor professor) {
         professores.add(professor);
+        professor.addProfessor(this);
     }
     public void addAluno(Aluno aluno) {
         alunos.add(aluno);
+        aluno.addCurso(this);
     }
     
     public void imprimir() {
